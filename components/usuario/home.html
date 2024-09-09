@@ -6,10 +6,10 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/userstyle.css">
     <link rel="icon" href="/icon.png" type="image/x-icon">
-    <title>Menu de temporada</title>
+    <title>Home</title>
 </head>
 <body>
-
+    <!-- barra de navegacion -->
     <header class="header">
         <nav>
           <div class="nav__header">
@@ -30,34 +30,68 @@
             </div>
           </div>
           <ul class="nav__links" id="nav-links">
-            <li><a href="/components/usuario/home.html">HOME</a></li>
-            <li><a href="/components/usuario/menu.html">MENU</a></li>
             <li><a href="/components/usuario/special.html">SPECIAL</a></li>
+            <li><a href="/components/usuario/menu.html">MENU</a></li>
+            <li><a href="/components/usuario/events.html">MENU TEMPORADA</a></li>
             <li><a href="/components/usuario/contact.html">CONTACT US</a></li>
+            <li><a href="/index.html">EXIT</a></li>
           </ul>
         </nav>
-    </header>
-        <!--  -->
-    <section class="section__container event__container" id="event">
-        <div class="event__content">
-          <div class="event__image">
-            <img src="/imagen/event.png" alt="event" />
+        <!-- Seccion de Anuncios -->
+        <div class="section__container header__container" id="home">
+          <div class="header__image">
+            <img src="/imagen/header.png" alt="header" />
           </div>
-          <div class="event__details">
-            <h3>Descubre</h3>
-            <h2 class="section__header">PRÓXIMOS EVENTOS</h2>
-            <p class="section__description">
-                Desde degustaciones de nuestros diversos platillos y colaboraciones con cocineros 
-                hasta iniciativas de extensión comunitaria y celebraciones de temporada, siempre hay algo especial 
-                en el horizonte en Coffe-Itiz. Sea el primero en conocer nuestros próximos eventos, promociones
-                 y reuniones mientras seguimos brindando alegría y sabor a nuestros queridos clientes. 
-                 ¡Únase a nosotros para crear momentos memorables y recuerdos deliciosos juntos!
+          <div class="header__content">
+            <h2>¡ES BUEN MOMENTO PARA DISFRUTAR DE UN GRAN SABOR!</h2>
+            <h1>SEMANA DE <br /><span>LA HAMBURGUESA</span></h1>
+          </div>
+        </div>
+      </header>
+      
+      
+      <!-- Ingreso al menu -->
+
+      <section class="section__container order__container" id="menu">
+        <h3>SIEMPRE SABROSO</h3>
+        <h2 class="section__header">TU ELIGE Y DISFRUTA</h2>
+        <p class="section__description">
+        Deseas sabores clásicos, aquí es donde comienza su viaje culinario. 
+        Satisfaga sus antojos y saboree en cada bocado
+        mientras crea su experiencia en Coffe-Itiz.
+        </p>
+        <div class="order__grid">
+          <div class="order__card">
+            <img src="/imagen/order-1.png" alt="order" />
+            <h4>Enchiladas</h4>
+            <p>
+              Hunda sus dientes en la perfección atemporal de nuestras Enchiladas de pollo,
+              una experiencia que nunca pasa de moda.
             </p>
+            <button class="btn">ORDEN AHORA</button>
+          </div>
+          <div class="order__card">
+            <img src="/imagen/order-1.png" alt="order" />
+            <h4>Burritos</h4>
+            <p>
+              Disfrute de los sabores vibrantes de nuestros Burritos, una
+              celebración de frescura y bondad saludable.
+            </p>
+            <button class="btn">ORDEN AHORA</button>
+          </div>
+          <div class="order__card">
+            <img src="/imagen/order-1.png" alt="order" />
+            <h4>Gorditas</h4>
+            <p>
+              Deléitese con una sinfonía de sabores ahumados y sabrosos 
+              con nuestras Gorditas, a la parrilla con tocino crocante.
+            </p>
+            <button class="btn">ORDEN AHORA</button>
           </div>
         </div>
       </section>
-     
-     <!-- Inicio del footer  -->
+
+      <!-- Inicio del footer -->
       <footer class="footer">
         <div class="section__container footer__container">
           <div class="footer__logo">
@@ -94,6 +128,7 @@
           Copyright © 2024 Web Design Mastery -- Coffe-Itiz.
         </div>
       </footer>
+      <script src="https://unpkg.com/scrollreveal"></script>
       <script src="/js/main.js"></script>
 </body>
 </html>

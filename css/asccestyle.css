@@ -1,1 +1,23 @@
-
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#toggle{
+    display: none;
+}    
+#label_toggle{
+    position:absolute;
+    top:10px;
+    right: 10px;
+    font-size: 2em;
+    color:rebeccapurple;
+    cursor: pointer;
+}    
+.orange{
+    background-color: #be0fce;
+    color:rgb(205, 218, 27);
+    transition: all 1s ease;
+}

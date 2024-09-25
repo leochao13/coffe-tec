@@ -9,7 +9,11 @@
     <title>Menu de temporada</title>
 </head>
 <body>
-
+  <div id="preloader">
+    <div class="cup">
+      <div class="handle"></div>
+      </div>
+  </div>
     <header class="header">
         <nav>
           <div class="nav__header">
@@ -31,13 +35,36 @@
           </div>
           <ul class="nav__links" id="nav-links">
             <li><a href="/components/usuario/home.html">HOME</a></li>
+            <li><a href="/components/usuario/special.html">ESPECIAL</a></li>
+            <li><a href="/components/chatbot/bot.html">CHAT-BOT</a></li>
+            <li><a href="/components/usuario/privacidad.html">PRIVACIDAD</a></li>
             <li><a href="/components/usuario/menu.html">MENU</a></li>
-            <li><a href="/components/usuario/special.html">SPECIAL</a></li>
-            <li><a href="/components/usuario/contact.html">CONTACT US</a></li>
+            <li><a href="/components/usuario/contact.html">CONTACTANOS</a></li>
+            <li><a href="/index.html">EXIT</a></li>
           </ul>
         </nav>
     </header>
-        <!--  -->
+        <!-- Promociones del mes -->
+    <section class="section__container event__container" id="event">
+        <div class="event__content">
+          <div class="event__image">
+            <img src="/imagen/event.png" alt="event" />
+          </div>
+          <div class="event__details">
+            <h3>Descubre</h3>
+            <h2 class="section__header">PRÓXIMOS EVENTOS</h2>
+            <p class="section__description">
+                Desde degustaciones de nuestros diversos platillos y colaboraciones con cocineros 
+                hasta iniciativas de extensión comunitaria y celebraciones de temporada, siempre hay algo especial 
+                en el horizonte en Coffe-Itiz. Sea el primero en conocer nuestros próximos eventos, promociones
+                 y reuniones mientras seguimos brindando alegría y sabor a nuestros queridos clientes. 
+                 ¡Únase a nosotros para crear momentos memorables y recuerdos deliciosos juntos!
+            </p>
+          </div>
+        </div>
+      </section>
+     
+        <!-- Promociones del mes -->
     <section class="section__container event__container" id="event">
         <div class="event__content">
           <div class="event__image">
@@ -94,6 +121,7 @@
           Copyright © 2024 Web Design Mastery -- Coffe-Itiz.
         </div>
       </footer>
+      <script src="/js/usermain.js"></script>
       <script src="/js/main.js"></script>
 </body>
 </html>

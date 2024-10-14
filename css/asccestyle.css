@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* Estilos por defecto (modo claro) */
  body {
     background-color: white;
@@ -28,3 +29,22 @@
     font-size: 16px;
     border-radius: 5px;
   }
+=======
+#toggle{
+    display: none;
+}    
+#label_toggle{
+    position:absolute;
+    top: 120px;
+    right: 10px;
+    font-size: 2em;
+    color:rebeccapurple;
+    cursor: pointer;
+}    
+
+.orange{
+    background-color: #be0fce;
+    color:rgb(205, 218, 27);
+    transition: all 1s ease;
+}
+>>>>>>> 848f0da707814f465ef2269d17425f44e3a87f0c

@@ -16,6 +16,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .section__container {
   max-width: var(--max-width);
@@ -98,10 +101,13 @@ nav {
 
 .nav__logo img {
   max-width: 150px;
+  width: 60px;
+  height: 60px;
 }
 
 .nav__logo-dark {
   display: none;
+
 }
 
 .nav__menu__btn {
@@ -141,6 +147,9 @@ nav {
 
 .nav__links a:hover {
   color: var(--secondary-color);
+}
+.nav__links a.active{
+  color: var(--tertiary-color);
 }
 
 .header__container {
@@ -196,15 +205,15 @@ nav {
 }
 
 .banner__card:nth-child(1) {
-  background-image: url("/imagen/banner-1.png");
+  background-image: url("https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_640.jpg");
 }
 
 .banner__card:nth-child(2) {
-  background-image: url("/imagen/banner-2.png");
+  background-image: url("https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGFjb3xlbnwwfHwwfHx8MA%3D%3D");
 }
 
 .banner__card:nth-child(3) {
-  background-image: url("/imagen/banner-3.png");
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/14/01/23/strawberry-2229140_640.jpg");
 }
 
 .banner__card p {
@@ -338,14 +347,14 @@ nav {
 }
 
 .footer {
-  background-image: url("/imagen/footer-bg.png");
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/19/11/38/avocado-1838785_640.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .footer__logo img {
-  max-width: 250px;
+  max-width: 80px;
 }
 
 .footer__content {
@@ -391,7 +400,7 @@ nav {
 }
 
 .footer__socials a:hover {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .footer__bar {
@@ -415,7 +424,7 @@ nav {
   }
 }
 
-@media (width > 768px) {
+@media (width > 804px) {
   nav {
     position: static;
     padding: 2rem 1rem;
@@ -547,4 +556,71 @@ nav {
   .order__grid {
     gap: 2rem;
   }
+}
+
+/* ------------------------Preloader--------------------- */
+#preloader{
+  background: #efb54a;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.cup{
+  height: 140px;
+  width: 180px;
+  border: 6px solid #efb54a;
+  position: absolute;
+  top:40%;
+  left:40%;
+  border-radius: 0px 0px 70px 70px;
+  background:url(/imagen/coffee.png);
+  box-shadow: 0px 0px 0px 6px white;
+  background-repeat: repeat-x;
+  background-position: 0px 140px;
+  animation: fill 6s infinite;
+}
+@keyframes fill{
+  0%{
+      background-position: 0px 140px;    
+  }
+  20%{
+      background-position: -450px 100px;
+  }
+  40%{
+      background-position: -900px 50px;
+  }
+  80%{
+      background-position: -1350px -40px;
+  }
+  100%{
+      background-position: 0px 140px;
+  }
+}
+.handle{
+  height: 70px;
+  width: 40px;
+  background-color: transparent;
+  border: 6px solid white;
+  position: relative;
+  left:186px;
+  top:2px;
+  border-radius: 0px 25px 80px 0px;
+}
+
+/* boton de subida */
+#subir__arriba{
+  width: 70px;
+  height: 70px;
+  background: #1a77f9;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
 }

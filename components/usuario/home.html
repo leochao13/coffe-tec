@@ -4,40 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/css/userstyle.css">
-    <link rel="icon" href="/icon.png" type="image/x-icon">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="/css/userstyle.css">
+    <link rel="stylesheet" href="/css/asccestyle.css">
+		<link rel="icon" href="/icon.png" type="image/x-icon">
+    <title>Inicio</title>
 </head>
 <body>
+  <div id="preloader">
+    <div class="cup">
+      <div class="handle"></div>
+      </div>
+  </div>
     <!-- barra de navegacion -->
     <header class="header">
-        <nav>
-          <div class="nav__header">
-            <div class="nav__logo">
-              <a href="#">
-                <img
-                  src="/imagen/logo-dark.png"
-                  alt="logo"
-                  class="nav__logo-dark"/>
-                <img
-                  src="/imagen/logo-white.png"
-                  alt="logo"
-                  class="nav__logo-white"/>
-              </a>
-            </div>
-            <div class="nav__menu__btn" id="menu-btn">
-              <i class="ri-menu-line"></i>
-            </div>
-          </div>
-          <ul class="nav__links" id="nav-links">
-            <li><a href="/components/usuario/special.html">SPECIAL</a></li>
-            <li><a href="/components/usuario/menu.html">MENU</a></li>
-            <li><a href="/components/usuario/events.html">MENU TEMPORADA</a></li>
-            <li><a href="/components/usuario/contact.html">CONTACT US</a></li>
-            <li><a href="/index.html">EXIT</a></li>
-          </ul>
-        </nav>
-        <!-- Seccion de Anuncios -->
+      <div id="navbar-container"></div> 
+      
+      <!-- Seccion de Anuncios -->
         <div class="section__container header__container" id="home">
           <div class="header__image">
             <img src="/imagen/header.png" alt="header" />
@@ -48,10 +31,10 @@
           </div>
         </div>
       </header>
-      
+       <!-- accesibilidad -->
+       <div id="cambiocolor"></div>
       
       <!-- Ingreso al menu -->
-
       <section class="section__container order__container" id="menu">
         <h3>SIEMPRE SABROSO</h3>
         <h2 class="section__header">TU ELIGE Y DISFRUTA</h2>
@@ -68,7 +51,7 @@
               Hunda sus dientes en la perfección atemporal de nuestras Enchiladas de pollo,
               una experiencia que nunca pasa de moda.
             </p>
-            <button class="btn">ORDEN AHORA</button>
+            <button href="/404.html" class="btn">ORDEN AHORA</button>
           </div>
           <div class="order__card">
             <img src="/imagen/order-1.png" alt="order" />
@@ -90,45 +73,21 @@
           </div>
         </div>
       </section>
-
+      <!-- boton subida -->
+      <div id="subir__arriba">
+        <span class="material-symbols-outlined">
+          arrow_upward
+          </span>
+      </div>
+     
       <!-- Inicio del footer -->
       <footer class="footer">
-        <div class="section__container footer__container">
-          <div class="footer__logo">
-            <img src="/imagen/logo-white.png" alt="logo" />
-          </div>
-          <div class="footer__content">
-            <p>
-                Bienvenido a Coffe-Itiz, donde se unen la pasión por la comida y
-                la hospitalidad genuina. Nuestra historia es una de dedicación a la
-                creación de la experiencia de atencion y sabor, desde la obtención de los mejores
-                ingredientes hasta la entrega de un sabor unico en cada bocado.
-            </p>
-            <div>
-              <ul class="footer__links">
-                <li>
-                  <span><i class="ri-map-pin-2-fill"></i></span>
-                  Av Telecomunicaciones, Chinam Pac de Juárez, Iztapalapa, 09208 Ciudad de México, CDMX
-                </li>
-                <li>
-                  <span><i class="ri-mail-fill"></i></span>
-                  coffe-itiz@gmail.com
-                </li>
-              </ul>
-              <div class="footer__socials">
-                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-                <a href="#"><i class="ri-whatsapp-fill"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__bar">
-          Copyright © 2024 Web Design Mastery -- Coffe-Itiz.
-        </div>
+        <div id="footer-container"></div> 
       </footer>
       <script src="https://unpkg.com/scrollreveal"></script>
-      <script src="/js/main.js"></script>
+      <script src="/js/usermain.js"></script>
+      <script src="/components/accesibilidad/cambiocolor.js"></script>
+      <script src="/components/usuario/navbar.js"></script>  
+      <script src="/components/usuario/footer.js"></script>    
 </body>
 </html>

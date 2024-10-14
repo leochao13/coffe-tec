@@ -1,0 +1,30 @@
+ /* Estilos por defecto (modo claro) */
+ body {
+    background-color: white;
+    color: black;
+  }
+
+  /* Estilos para el modo oscuro */
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  /* Estilos específicos para los divs en modo oscuro */
+  .dark-mode .order__card1 {
+    background-color: red;
+  }
+
+  /* Botón para alternar entre modos */
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1a77f9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
